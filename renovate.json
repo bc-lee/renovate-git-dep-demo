@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "prConcurrentLimit": 3,
+  "regexManagers": [
+    {
+      "fileMatch": ["^build\\.sh$"],
+      "matchStrings": ["WEBRTC_COMMIT_SHA=\"(?<currentDigest>.*?)\""],
+      "depNameTemplate": "https://webrtc.googlesource.com/src",
+      "versioningTemplate": "git",
+      "datasourceTemplate": "git-refs",
+      "currentValueTemplate": "main"
+    }
+  ]
+}
