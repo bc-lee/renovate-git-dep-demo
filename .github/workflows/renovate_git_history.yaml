@@ -1,0 +1,13 @@
+name: "Add Renovate Git History"
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  renovate-git-history:
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: bc-lee/renovate-git-history-action@1452a7dad2350be2b31806e6ae5b895e9c6f0c50
