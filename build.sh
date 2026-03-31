@@ -2,7 +2,7 @@
 
 set -e
 
-WEBRTC_COMMIT_SHA="4b3bb799e2e1e559ec284e5d192fd01d93691db6"
+WEBRTC_COMMIT_SHA="3f11f145666a9d4fb20405518a8f71adda7c052f"
 
 # Checkout depot_tools
 if [[ ! -d depot_tools ]]; then
